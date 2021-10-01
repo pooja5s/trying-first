@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>  
-using namespace std;  
-  
+using namespace std;   
 void sortedMerge(int a[], int b[], int res[],  
     int n, int m) // Merge two arrays in unsorted manner  
 {  
