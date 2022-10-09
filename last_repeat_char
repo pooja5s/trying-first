@@ -1,0 +1,36 @@
+// C++ program to implement
+// the above approach
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to find the last removed
+// character from the string
+char lastRemovedCharacter(string str)
+{
+	// Stores length of the string
+	int n = str.length();
+
+	// Base Case:
+	if (n == 1)
+		return str[0];
+
+	// If the second last
+	// character is '0'
+	if (str[n - 2] == '0') {
+
+		return ('1' - str[n - 1] + '0');
+	}
+
+	// If the second last
+	// character is '1'
+	else
+		return str[n - 1];
+}
+
+// Driver Code
+int main()
+{
+	string str = "10010";
+	cout << lastRemovedCharacter(str);
+}
