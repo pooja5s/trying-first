@@ -1,6 +1,5 @@
 // C++ program to find combinations from n
 // arrays such that one element from each
-// array is present
 #include <bits/stdc++.h>
 
 using namespace std;
